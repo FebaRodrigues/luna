@@ -1,0 +1,97 @@
+/* src/styles/custom.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Layout Styles */
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  /* Main Content Styles */
+  main {
+    background: linear-gradient(90deg, #dedcdc, #edde99); 
+    padding: 20px; 
+    flex: 1; /* Allow main to grow and fill available space */
+  }
+  
+  /* Header Styles */
+  .navbar {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1rem 0 !important;
+    background: linear-gradient(90deg, #ff5d5d, #f869c3); 
+    color: rgb(0, 0, 0);
+  }
+  
+  .navbar .container-fluid {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  /* Navbar Link Styles */
+  .navbar .nav-link {
+    color: white !important; /* Set link color to pure white */
+  }
+  
+  .navbar .nav-link:hover {
+    color: gold !important; /* Set hover color to gold */
+  }
+  
+  /* Footer Styles */
+  footer {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 2rem 0 !important;
+    background-color: #343a40; 
+    color: white;
+    position: relative; /* Ensure footer is positioned relative to the content */
+  }
+  
+  /* Ensure footer stays at the bottom */
+  footer .container-fluid {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  
+  /* Product Card Styles */
+  .card {
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    height: 350px; /* Set a fixed height for the card */
+    display: flex;
+    flex-direction: column; /* Allow card body to stack vertically */
+  }
+  
+  .product-image {
+    width: 100%;  
+    height: 300px; /* Set a fixed height for the image */
+    object-fit: cover;  
+    border-radius: 8px;  
+  }
+  
+  /* Add hover effect for links */
+  a {
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #4a90e2; 
+  }
+  
+  /* Navbar Brand Logo Styles */
+  .navbar-brand img {
+    height: 50px; /* Set the height of the logo */
+    width: 50px; /* Set the width of the logo */
+    border-radius: 50%; /* Make the logo circular */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
